@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VMMcode learner</title>
+    <link
+      rel="shortcut icon"
+      href="src/img/logo_circle.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/styles/stylesheet.css" />
+    <link rel="stylesheet" href="src/styles/reset_aroken.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__inner">
+        <a href="#" class="logo">
+          <img src="src/img/logo_circle.webp" alt="Логотип сайта" />
+        </a>
+        <nav class="nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link" data-nav="projects__content"
+                >Pet-проекты</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link" data-nav="elements__content"
+                >Элементы</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link" data-nav="library__content"
+                >Библиотеки</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link" data-nav="other__content"
+                >Прочее</a
+              >
+            </li>
+          </ul>
+          <a class="burger__icon">
+            <span></span>
+          </a>
+        </nav>
+        <div class="quotes__window">
+          <blockquote class="quote__inner active">
+            <div class="quote__text-wrapper">
+              <p>Знание без границ</p>
+              <p>- Уильям Шекспир</p>
+            </div>
+          </blockquote>
+          <blockquote class="quote__inner">
+            <div class="quote__text-wrapper">
+              <p>Обучение - это карта к успеху</p>
+              <p>- Малькольм Форбс</p>
+            </div>
+          </blockquote>
+          <blockquote class="quote__inner">
+            <div class="quote__text-wrapper">
+              <p>Всякое знание начинается с обучения</p>
+              <p>- Аристотель</p>
+            </div>
+          </blockquote>
+          <blockquote class="quote__inner">
+            <div class="quote__text-wrapper">
+              <p>Нельзя быть слишком образованным</p>
+              <p>- Конфуций</p>
+            </div>
+          </blockquote>
+          <blockquote class="quote__inner">
+            <div class="quote__text-wrapper">
+              <p>
+                В мире столько цифр, но главное,<br />
+                чтоб не приходилось их складывать
+              </p>
+              <p>- Марьяночка</p>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <aside class="aside">
+        <div class="welcome">
+          <h1>Учу Frontend-разработку!</h1>
+          <p>Ну как учу, пока просто пытаюсь:)</p>
+        </div>
+        <div class="list__wrapper">
+          <div class="list__inner">
+            <ul
+              class="list projects__list list__active"
+              data-list="projects__content"
+            >
+              <li class="list__item">
+                <button class="list__btn active__btn" data-filter="all">
+                  Все
+                </button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="easy">Легкие</button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="easy">Средние</button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="hard">Сложные</button>
+              </li>
+            </ul>
+
+            <ul class="list elements__list" data-list="elements__content">
+              <li class="list__item">
+                <button class="list__btn active__btn" data-filter="all">
+                  Все
+                </button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="button">Кнопки</button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="switch">
+                  Переключатели
+                </button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="menu">Меню</button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="checkbox">
+                  Чекбоксы
+                </button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="substrate">
+                  Подложки
+                </button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="widget">Виджеты</button>
+              </li>
+            </ul>
+
+            <ul class="list library__list" data-list="library__content">
+              <li class="list__item">
+                <button class="list__btn active__btn" data-filter="all">
+                  Все
+                </button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="header">Headers</button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="footer">Footers</button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="sidebar">
+                  Сайдбары
+                </button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="accord">
+                  Аккордеоны
+                </button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="slider">Слайдеры</button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="modal">Модалки</button>
+              </li>
+            </ul>
+
+            <ul class="list other__list" data-list="other__content">
+              <li class="list__item">
+                <button class="list__btn active__btn" data-filter="all">
+                  Все
+                </button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="hover">Hovers</button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="animation">
+                  Анимация
+                </button>
+              </li>
+              <li class="list__item">
+                <button class="list__btn" data-filter="other">Прочее</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="main__inner main__inner-active"
+          data-content="projects__content">
+          <ul class="content__list">
+            <li class="content__item" data-filter="easy">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/Guitar-school__screen.webp"
+                  alt="Превью сайта Guitar-school"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="medium">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/House-build__screen.webp"
+                  alt="Превью сайта House-build"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="hard">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/Roboschool__screen.webp"
+                  alt="Превью сайта Roboschool"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main__inner" data-content="elements__content">
+          <ul class="content__list">
+            <li class="content__item" data-filter="button">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen2.png"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="switch">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="menu">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="checkbox">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="substrate">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="widget">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main__inner" data-content="library__content">
+          <ul class="content__list">
+            <li class="content__item" data-filter="header">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen3.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="footer">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="sidebar">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="accord">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="slider">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="modal">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main__inner" data-content="other__content">
+          <ul class="content__list">
+            <li class="content__item" data-filter="hover">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="animation">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+            <li class="content__item" data-filter="other">
+              <div class="content__preview-image">
+                <img
+                  src="src/img/screen1.webp"
+                  alt="Превью сайта -название сайта-"
+                />
+              </div>
+              <div class="content__desc">
+                <p>Далеко-далеко за словесными горами.</p>
+              </div>
+              <a href="" class="content__btn">Подробнее</a>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <script src="src/scripts/script.js"></script>
+  </body>
+</html>
