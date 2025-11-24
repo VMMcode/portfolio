@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #363735;
+  color: #363735;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.wrapper {
+  max-width: 50vw;
+  min-height: 70vh;
+  background: #363735;
+  border-radius: 20px;
+  border: 5px solid #9a9e98;
+  box-shadow: 0px 0px 20px #9a9e98;
+  padding: 120px;
+  margin-top: 70px;
+  display: flex;
+  gap: 75px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.box:nth-child(1) {
+  border: 3px solid #ff2e9a;
+  box-shadow: 0px 0px 25px #ff2e8f,
+              0px 0px 25px #ff2e8f inset;
+}
+
+.box:nth-child(2) {
+  border: 3px solid #001aff;
+  box-shadow: 0px 0px 25px #0084ff,
+              0px 0px 25px #0084ff inset;
+}
+
+.box:nth-child(3) {
+  border: 3px solid #09ff00;
+  box-shadow: 0px 0px 25px #9dff00,
+              0px 0px 25px #9dff00 inset;
+}
+
+.box:nth-child(4) {
+  border: 3px solid #ff996f;
+  box-shadow: 0px 0px 25px #ff9900,
+              0px 0px 25px #ff9900 inset;
+}
+
+.box:nth-child(5) {
+  border: 3px solid #ff004c;
+  box-shadow: 0px 0px 25px #ff005f,
+              0px 0px 25px #ff005f inset;
+}
+
+.box:nth-child(6) {
+  border: 3px solid #1e2cfa;
+  box-shadow: 0px 0px 25px #0012f5,
+              0px 0px 25px #0012f5 inset;
+}
